@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.navbar{
+    position: fixed;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+color: white;
+    
+}
+.nav{
+  position: fixed;
+}
+.overlay1{
+    background-color: rgba(75, 78, 102, 0.712);
+   height:  100%;
+   width:  100%;
+  z-index: 1;
+   position: absolute;
+   top: 0px;
+left: 0px;
+}
+.text{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.ver{
+
+    height: 100vh !important;
+
+}
+
+
+
+.navbar-nav{
+    margin-left: 100px;
+   
+}
+.nav-link:hover{
+  color: orange;
+  background-color: darkblue;
+}
+.navbar-toggler-icon{
+ 
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+}
+
+.ver{
+
+width: auto;
+margin-bottom: 200px; 
+
+}
+.bbt{
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    text-decoration: bolder;
+    font-weight: 700;
+    color: black;
+    
+    background-color: orange;
+
+
+}
+.bbt:hover{
+      color:  orange;
+    background-color: white;
+    border: 3px solid orange;
+}
+.hi{
+    display: inline-block;
+}
+.card1{
+    border: 3px solid rgb(252, 169, 169);
+    background-color: rgb(252, 169, 169);
+}
+.card1:hover{
+    padding: 10px ;
+    border: 5px solid black;
+    color: white;
+}
+.card2{
+    background-color: white;
+    border: 2px solid rgb(230, 120, 120);
+    color: black;
+    font-weight: 500;
+}
+
+.card2:hover{
+    background-color: rgb(230, 120, 120);
+    border: 3px solid white;
+}
+
+hr{
+    color: red;
+}
+.car-im:hover{
+padding: 5px;
+}
+.card3:hover{
+border: 3px solid black;
+}
+.card3{
+    border: 1px solid black;
+}
+.v1{
+
+    height: 500px;
+}
+.v2{
+   
+    height: 500px;
+}
+.para{
+font-size: 13px;
+color: white;
+}
+
+.textt{
+margin-top: 80px;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: 500px;
+
+}
+input{
+    width: 250px;
+    height: 40px;
+}
+select{
+    width: 250px;
+    height: 40px;
+}
+form >button{
+    width: 250px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+}
+.font-boy{
+    background-image: url(images/s-bg.jpg);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+color: white  !important;
+    width: 100%;
+    height: 100%;
+   
+
+}
+.overlay2{
+    background-color:rgba(4, 9, 30, 0.8);
+   height:  100%;
+   width:  100%;
+  z-index: 1;
+   position: absolute;
+   top: 0px;
+left: 0px;
+}
+.vfd{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.tet{
+    margin-bottom: 100px;
+}
+.immn{
+ width: 100%;
+ height: 100%;
+}
+.tag{
+    border: 2px solid black;
+}
+.boxx{
+    height: 400px;
+    width: cover;
+    border: 1px solid white;
+
+}
+
+
+.booo2{
+    background-image: url(images/p4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 100%;
+   height: 100%;
+   filter: brightness(80%);
+   height: 400px;
+
+}
+.box-texxt{
+    color: whitesmoke !important;
+    position: relative;
+    width: auto;
+    text-align: center;
+    height: 500px;
+ 
+}
+.box-texxt >button{
+    color: whitesmoke;
+    background-color: orange;
+    border-radius: 20px;
+    height: 40px;
+   
+}
+.l1{
+ 
+    height: 400px;
+    color: white;
+}
+.l1 >a{
+    color: white;
+    text-decoration: none;
+}
+.l1 >a:hover{
+    color: orange;
+}
+.l1 >h5{
+color: aqua;
+}
+
+.last{
+    background-color: #04091e;
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <section class="hero ">
+ 
+    <div class="overlay1"></div>
+<div class="container-fluid text  ">
+ <nav class="container-fluid navbar navbar-expand-lg bg-dark ">
+ 
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/logo.png.webp" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+        <li class="nav-item">
+          <a class="nav-link text-white p-3  mx-3" href="#">Home</a>   
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  text-white  p-3 mx-3" href="#">About </a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  text-white  p-3  mx-3" href="#">Courses</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  text-white  p-3  mx-3" href="#">Events</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  text-white  p-3  mx-3" href="#">Gallery</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white  p-3 mx-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Blog Home</a></li>
+            <li><a class="dropdown-item" href="#">Blog Single</a></li>
+           
+          </ul>
+        </li>
+ <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-white  p-3 mx-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Course Details</a></li>
+            <li><a class="dropdown-item" href="#">Event Details</a></li>
+            <li><a class="dropdown-item" href="#">Elements</a></li>
+            <li><a class="dropdown-item" href="#">Level 2</a></li>
+           
+          </ul>
+        </li>
+
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav> 
+
+
+<div class="row h-100  ver h-100 text-center align-items-center justify-content-center ">
+<div class="col" data-aos="fade-down"><h1 >WE ENSURE BETTER EDUCATION FOR A BETTER WORLD </h1>
+<p data-aos="fade-down">In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble.
+<br><br>
+    <button class="bbt" fade-down><b>Contact us</b></button>
+
+</p>
+</div>
+
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row text-center align-items-center justify-content-center">
+        <div class="card col-md-4 mx-2 mt-4 card1" style="width: 22rem;">
+  <div class="card-body">
+    <h5 class="card-title">Learn Online Courses</h5>  <hr>
+    <p class="card-text">Usage of the Internet is becoming more common due to rapid advancement of technology.</p>
+    <a href="#" class="btn btn-primary  card2">Join Now</a>
+  </div>
+</div>
+
+      <div class="card col-md-4 mx-2 mt-4 card1" style="width: 22rem;">
+  <div class="card-body">
+    <h5 class="card-title">NO .1 University</h5>       <hr>
+    <p class="card-text">For many of us, our very first experience of learning about the celestial bodies begins when we saw our first.</p>
+    <a href="#" class="btn btn-primary card2">Join Now</a>
+  </div>
+</div>
+
+      <div class="card col-md-4 mx-2 mt-4  card1" style="width: 22rem;">
+  <div class="card-body">
+    <h5 class="card-title">Huge Library</h5>    <hr>
+    <p class="card-text">If you are a serious astronomy fanatic like a lot of us are, you can probably remember that one event.</p>
+    <a href="#" class="btn btn-primary card2">Join Now</a>
+  </div>
+</div>
+
+</div>
+</div>
+
+</section>
+<br><br><br><br><br>
+<section>
+<div class="container">
+   <div class="pop-text text-center">
+     <h1>Popular Courses we offer</h1>
+    <p>There is a moment in the life of any aspiring.</p>
+   </div>
+   <br><br>
+    <div class="row align-items-center justify-content-center ">
+<div class="col-md-3">
+    <div class="card mx-2 card3 mt-3" style="width: 16rem;">
+  <img src="images/p1.jpg" class="card-img-top  car-im" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Learn Designing</h5>
+    <p class="card-text">When television was young, there was a hugely popular show based on the still popular fictional characte	</p>
+  </div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card mx-2 card3  mt-3" style="width: 16rem;">
+  <img src="images/p2.jpg" class="card-img-top  car-im" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Learn React js beginners</h5>
+    <p class="card-text">When television was young, there was a hugely popular show based on the still popular fictional characte	</p>
+  
+  </div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card mx-2 card3  mt-3" style="width: 16rem;">
+  <img src="images/p3.jpg" class="card-img-top  car-im" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Learn Photography</h5>
+    <p class="card-text">When television was young, there was a hugely popular show based on the still popular fictional characte	</p>
+   
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-3">
+<div class="card  mx-2  card3 mt-3" style="width: 16rem;">
+  <img src="images/p4.jpg" class="card-img-top car-im" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Learn Surveying</h5>
+    <p class="card-text">When television was young, there was a hugely popular show based on the still popular fictional characte	</p>
+  
+  </div>
+</div>
+</div>
+</div>
+    </div>
+</div>
+
+
+</section>
+<br><br><br><br><br><br><br><br>
+
+<section class="font-boy">
+    <div class="overlay2">
+
+    </div>
+<div class="container">
+    <div class="row  vfd">
+        <div class=" col-md-8 v1 p-5">
+<h1>Get reduced fee
+during this Summer!</h1>
+<p class=" para">nappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach.</p>
+   <br><br>
+<div class="row">
+<div class="col">
+    <i class="fa-solid fa-graduation-cap fa-xl" style="color: #FFD43B;"></i>
+<h4>Expert Instructors</h4>
+<p class=" para">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+</div>
+<div class="col">
+    <i class="fa-solid fa-id-card fa-xl" style="color: #FFD43B;"></i>
+    <h4>Certification</h4>
+    <p class=" para">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+<br>
+</div>
+     </div>  
+
+</div>
+
+         <div class=" col-md-4 v2">
+<div class="textt p-3 ">
+    <br><br><br>
+                <h5>Search for Available Course</h5>
+                <br>
+<form action="">
+    <input type="text" name="" id="Name" placeholder="Your Name" class="mb-3">  <br>
+     <input type="text" name="" id="Name" placeholder="Your Email Address"  class="mb-3">  <br>
+      <input type="text" name="" id="Name" placeholder="Your Phone Number"  class="mb-3">  <br>
+    <select name="" id="" aria-placeholder="Choose Course" class="mb-3">  <br>
+        <option value="">Choose Course</option>
+        <option value="">Course 1</option>
+        <option value=""> Course 2</option>
+        <option value=""> Course 3</option>
+    </select>
+    <br>
+       <button>Submit</button>
+
+
+
+</form>
+</div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+<br><br><br><br><br><br><br>
+<section>
+<div class="container">
+    <div class="tet text-center ">
+        <h1>Upcoming Events of our Institute</h1>
+        <p>If you are a serious astronomy fanatic like a lot of us</p>
+    </div>
+    <div class="row">
+
+        <div class="card mb-3 tag" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-6">
+      <img src="images/e1.jpg" class="img-fluid rounded-start immn" alt="...">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        <h4 class="card-title">The Universe Through A Child S Eyes</h4>
+        <p class="card-text">For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="col"></div>
+        <div class="card mb-3 tag" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-6 ">
+      <img src="images/e2.jpg" class="img-fluid rounded-start immn " alt="...">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        <h4 class="card-title">The Universe Through A Child S Eyes</h4>
+        <p class="card-text"> For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens	</p>
+   
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+
+
+  
+</section>
+<br><br><br><br><br><br><br><br>
+
+<section class="booo2">
+<div class="boxx">
+<div class="box-texxt mt-5 mx-5">
+    <h2>Become an instructor</h2>  <br>
+<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station whether that is on the deck.</p>
+<button>APPLY FOR THE POST</button>
+</div>
+</div>
+
+</section>
+
+
+<br><br><br><br><br><br><br>
+<footer>
+<div class="container-fluid last">
+    <div class="row">
+        <br>
+        <div class="col-md-2 l1 p-5"> <h5> Top Products</h5> <br>
+            <a href="">Managed Website</a>  <br>
+            <a href="">Managed Reputation</a>  <br>
+            <a href="">Power Tools</a>  <br>
+            <a href="">Marketing Service</a>  <br>
+         </div>
+         <br>
+        <div class="col-md-2 l1 p-5"> <h5>Quick Links</h5>  <br>
+              <a href="">Jobs</a>  <br>
+            <a href="">Brand Assets</a>  <br>
+            <a href="">Investor Relations</a>  <br>
+            <a href="">Terms of Service</a>  <br>
+        </div>
+        <div class="col-md-2 l1 p-5"> <h5>Features</h5>  <br>
+            <a href="">Jobs</a>  <br>
+            <a href="">Brand Assets</a>  <br>
+            <a href="">Investor Relations</a>  <br>
+            <a href="">Terms of Service</a>  <br>
+        </div>
+        <div class="col-md-2 l1 p-5"> <h5>Resources</h5>  <br>
+            <a href="">Guide</a>  <br>
+            <a href="">Research</a>  <br>
+            <a href="">Expert</a>  <br>
+            <a href="">Agencies</a>  <br>
+         </div>
+        <div class="col-md-4 l1 p-5"> <h5>Newsletter</h5> 
+            <p>Stay update with our latest</p>
+            <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+        </div>
+    </div>
+</div>
+
+
+</footer>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
